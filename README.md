@@ -1,125 +1,120 @@
-🏰 Image to Speech GenAI Tool Using LLM 🌟♨️
+# 🏰 Image to Speech GenAI Tool 🌟♨️  
+An innovative AI tool that generates audio short stories based on the context of uploaded images. It leverages cutting-edge GenAI models from Hugging Face, OpenAI, and LangChain, and is deployed on both Streamlit Cloud and Hugging Face Space.  
 
-An AI tool that generates an audio short story based on the context of an uploaded image by prompting a GenAI LLM model. The tool integrates Hugging Face AI models, OpenAI, and LangChain. It is deployed on Streamlit and Hugging Space Cloud platforms separately.
+---
 
-📢 Run App with Streamlit Cloud
+## 📢 Deployments  
 
-Launch App On Streamlit
+### Run App on Streamlit Cloud  
+[![Launch App On Streamlit](https://img.shields.io/badge/Streamlit-Run%20App-orange)](https://image-to-speech-genai-tool-using-llm.streamlit.app/)  
 
-📢 Run App with HuggingFace Space Cloud
+### Run App on HuggingFace Space Cloud  
+[![Launch App On HuggingFace Space](https://img.shields.io/badge/HuggingFace-Run%20App-yellow)](https://huggingface.co/spaces/GurpreetKJ/Image-to-SpeechStory_GenAI-Tool)  
 
-Launch App On HuggingFace Space
+---
 
-🎯 Demo:
+## 🎯 Key Features  
 
-Example Outputs:
+1. **Image to Text**  
+   - Uses Hugging Face's image-to-text transformer model ([Salesforce/blip-image-captioning-base](https://huggingface.co/Salesforce/blip-image-captioning-base)) to analyze the image and generate descriptive text.  
 
-Audio: Available in the img-audio folder.
+2. **Text to Story**  
+   - Utilizes OpenAI's GPT-3.5-Turbo model to create a short, imaginative story (default: 50 words) from the descriptive text.  
 
-Audio: Available in the img-audio folder.
+3. **Story to Speech**  
+   - Converts the story into a narrated audio file using Hugging Face's text-to-speech model ([espnet/kan-bayashi_ljspeech_vits](https://huggingface.co/espnet/kan-bayashi_ljspeech_vits)).  
 
-Audio: Available in the img-audio folder.
+4. **User-Friendly Interface**  
+   - Built with Streamlit for easy image uploading and playback of generated audio.  
 
-📈 System Design
+---
 
+## 📈 System Design  
 
+![System Design Diagram](img/system-design.drawio.png)  
 
-🏆 Approach
+---
 
-The application uses Hugging Face AI models to generate text from an image and convert the text into audio narration. The execution is divided into three parts:
+## 📂 Demo  
 
-1. Image to Text
+### Couple Test Image Output  
+![Couple Test Image Output](img-audio/CoupleOutput.jpg)  
+*Audio file available in the `img-audio` folder.*  
 
-Model: Salesforce/blip-image-captioning-base
+### Family Test Image Output  
+![Family Test Image Output](img-audio/FamilyOutput.jpg)  
+*Audio file available in the `img-audio` folder.*  
 
-Generates a text scenario based on the AI's understanding of the image context.
+### Picnic Test Image Output  
+![Picnic Vacation Test Image Output](img-audio/PicnicOutput.jpg)  
+*Audio file available in the `img-audio` folder.*  
 
-2. Text to Story
+---
 
-Model: OpenAI's gpt-3.5-turbo
+## 🌟 Requirements  
 
-Generates a short story (adjustable to 50 words) based on the scenario.
+The following libraries and tools are required:  
 
-3. Story to Speech
+- `os`  
+- `python-dotenv`  
+- `transformers`  
+- `torch`  
+- `langchain`  
+- `openai`  
+- `requests`  
+- `streamlit`  
 
-Model: espnet/kan-bayashi_ljspeech_vits
+---
 
-Converts the generated story into a narrated audio file.
+## 🚀 Usage  
 
-User Interface
-
-Built with Streamlit to enable uploading an image and playing the resulting audio.
-
-🌟 Requirements
-
-The following libraries are required to run the application:
-
-os
-
-python-dotenv
-
-transformers
-
-torch
-
-langchain
-
-openai
-
-requests
-
-streamlit
-
-🚀 Usage
-
-Obtain personal API tokens for Hugging Face and OpenAI.
-
-Set up a virtual environment (venv) and install the ipykernel library for local IDE use.
-
-Save tokens in a .env file within the project directory:
-
-OPENAI_API_KEY=<your-api-key-here>
-HUGGINGFACE_API_TOKEN=<your-access-token-here>
-
-Run the app locally:
-
-streamlit run app.py
-
-Once the app is running:
-
-Upload an image to the interface.
-
-The app generates:
-
-Scenario text from the image.
-
-A short story based on the scenario.
-
-An audio narration of the story.
-
-The app is also deployed on Streamlit Cloud and Hugging Face Space for easy access.
-
+### Prerequisites  
+- Obtain personal API tokens for Hugging Face and OpenAI.  
+- Save the tokens in a `.env` file with the following format:  
+  ```env
+  OPENAI_API_KEY=<your-api-key-here>  
+  HUGGINGFACE_API_TOKEN=<your-access-token-here>  
+Steps
+Set up a virtual environment (venv) and install dependencies:
+bash
+Copy
+Edit
+pip install -r requirements.txt  
+Run the app:
+bash
+Copy
+Edit
+streamlit run app.py  
+Upload an image via the app interface.
+The app will:
+Generate descriptive text for the uploaded image.
+Create a short story based on the text.
+Provide a playable audio file of the narrated story.
 ▶️ Installation
-
-Clone the repository:
-
-git clone https://github.com/alimdsaif3/Image-to-Story-Converter.git
-
-Install the required dependencies:
-
-pip install -r requirements.txt
-
-Set up your API keys in a .env file as described above, then run the app with:
-
-streamlit run app.py
-
+Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/alimdsaif3/Image-to-Story-Converter.git  
+Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt  
+Run the App Locally
+bash
+Copy
+Edit
+streamlit run app.py  
 ©️ License
-
-Distributed under the MIT License. See the LICENSE file for more details.
+This project is distributed under the MIT License. For details, see the LICENSE file in the repository.
 
 🤝 Contributions
+If you like this project, please ⭐ the repository! Contributions are welcome. Submit a pull request if you have suggestions or enhancements.
 
-If you like this project, please ⭐ the repository! Contributions are welcome. Submit a pull request with your improvements or suggestions.
+---
 
+#### **If you like this LLM Project do drop ⭐ to this repo**
 #### Follow me on [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-saif-ali-9815a774/) &nbsp; [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alimdsaif3)
 
+---
