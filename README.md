@@ -74,38 +74,41 @@ The following libraries and tools are required:
   ```env
   OPENAI_API_KEY=<your-api-key-here>  
   HUGGINGFACE_API_TOKEN=<your-access-token-here>  
-Steps
+
+### Steps
+
 Set up a virtual environment (venv) and install dependencies:
-bash
-Copy
-Edit
+
 pip install -r requirements.txt  
-Run the app:
-bash
-Copy
-Edit
+
+### Run the app:
+
 streamlit run app.py  
-Upload an image via the app interface.
+
+### Upload an image via the app interface.
+
 The app will:
 Generate descriptive text for the uploaded image.
-Create a short story based on the text.
+
+### Create a short story based on the text.
+
 Provide a playable audio file of the narrated story.
-▶️ Installation
+
+### ▶️ Installation
+
 Clone the Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/alimdsaif3/Image-to-Story-Converter.git  
-Install Dependencies
-bash
-Copy
-Edit
+
+
+### Install Dependencies
+
 pip install -r requirements.txt  
-Run the App Locally
-bash
-Copy
-Edit
+
+### Run the App Locally
+
 streamlit run app.py  
+
 ©️ License
 This project is distributed under the MIT License. For details, see the LICENSE file in the repository.
 
