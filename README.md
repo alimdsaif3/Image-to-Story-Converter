@@ -6,7 +6,7 @@ An innovative AI tool that generates audio short stories based on the context of
 ## 📢 Deployments  
 
 ### Run App on Streamlit Cloud  
-[![Launch App On Streamlit](https://img.shields.io/badge/Streamlit-Run%20App-orange)](https://huggingface.co/spaces/alimdsaif3/Image-to-Speech-GenAI-Tool-Using-LLM)  
+[![Launch App On Streamlit](https://img.shields.io/badge/Streamlit-Run%20App-orange)](https://image-to-story-converter-yrm9ahzx9fc4ksspczutsb.streamlit.app/)  
 
 ### Run App on HuggingFace Space Cloud  
 [![Launch App On HuggingFace Space](https://img.shields.io/badge/HuggingFace-Run%20App-yellow)](https://huggingface.co/spaces/alimdsaif3/Image-to-Speech-GenAI-Tool-Using-LLM)  
