@@ -1,5 +1,5 @@
 # 🏰 Image to Speech GenAI Tool 🌟♨️  
-An innovative AI tool that generates audio short stories based on the context of uploaded images. It leverages cutting-edge GenAI models from Hugging Face, OpenAI, and LangChain, and is deployed on both Streamlit Cloud and Hugging Face Space.  
+An innovative AI tool that generates audio short stories based on the context of uploaded images. It leverages cutting-edge GenAI models from Hugging Face, OpenAI, and LangChain, and is deployed on both Streamlit Cloud and Hugging Face Space.   
 
 ---
 
