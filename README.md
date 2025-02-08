@@ -35,15 +35,6 @@ An innovative AI tool that generates audio short stories based on the context of
 
 ---
 
-## 📂 Demo  
-
-
-### Picnic Test Image Output  
-![Picnic Vacation Test Image Output](img-audio/PicnicOutput.jpg)  
-*Audio file available in the `img-audio` folder.*  
-
----
-
 ## 🌟 Requirements  
 
 The following libraries and tools are required:  
