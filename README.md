@@ -37,13 +37,6 @@ An innovative AI tool that generates audio short stories based on the context of
 
 ## 📂 Demo  
 
-### Couple Test Image Output  
-![Couple Test Image Output](img-audio/CoupleOutput.jpg)  
-*Audio file available in the `img-audio` folder.*  
-
-### Family Test Image Output  
-![Family Test Image Output](img-audio/FamilyOutput.jpg)  
-*Audio file available in the `img-audio` folder.*  
 
 ### Picnic Test Image Output  
 ![Picnic Vacation Test Image Output](img-audio/PicnicOutput.jpg)  
